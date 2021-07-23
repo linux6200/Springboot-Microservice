@@ -1,0 +1,8 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-lb/eureka
+  instance:
+    hostname: eureka-lb

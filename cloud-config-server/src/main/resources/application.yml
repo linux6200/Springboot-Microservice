@@ -8,7 +8,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/shabbirdwd53/config-server
+          uri: https://github.com/linux6200/config-server
+          default-label: main
           clone-on-start: true
 
 
@@ -20,4 +21,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
+      defaultZone: http://eureka-lb/eureka
